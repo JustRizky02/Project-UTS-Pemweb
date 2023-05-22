@@ -523,15 +523,13 @@
   <h1 class="heading"> Konsultasi Project </h1>
 
   <div class="row">
-
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56400419603!2d107.5607554697324!3d-6.903442379407542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1684673008025!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"></iframe>
-
-    <form action="">
+    <form class="form" method="post" action="inputuser.php">
       <h3>Hubungi Kami</h3>
-      <input type="text" placeholder="Nama" class="box">
-      <input type="email" placeholder="Email" class="box">
-      <input type="number" placeholder="No.Telp" class="box">
-      <textarea name="" placeholder="Pesan" class="box" id="" cols="30" rows="10"></textarea>
+      <input type="text" placeholder="Nama" class="box" name="nama" required>
+      <input type="email" placeholder="Email" class="box" name="email" required>
+      <input type="tel" placeholder="No.Telp" class="box" name="telp" required>
+      <textarea name="pesan" placeholder="Pesan" class="box" cols="30" rows="10" required></textarea>
       <input type="submit" value="send message" class="btn">
     </form>
 

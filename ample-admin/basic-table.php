@@ -308,17 +308,23 @@
                                             if (isset($_GET['hapus'])) {
                                                 $hapusStatus = $_GET['hapus'];
                                                 if ($hapusStatus === 'berhasil') {
-                                                    echo '<script>
-                                                    Swal.fire({
-                                                      title: "Berhasil dihapus",
-                                                      icon: "success",
-                                                      timer: 2000,
-                                                      showConfirmButton: false
-                                                    });
-                                                  </script>';
+                                                    echo '
+                                                        <script>
+                                                            Swal.fire({
+                                                                title: "Berhasil dihapus",
+                                                                icon: "success",
+                                                                timer: 120,
+                                                                showConfirmButton: false
+                                                            });
+                                                        </script>
+                                                    ';
                                                 }
                                             }
+//                                            header('Location: basic-table.php?hapus=berhasil');
+//                                            exit;
+
                                             ?>
+
                                         </td>
                                         <div class="modal fade" id="edit_button_<?php echo $d['id_user']; ?>" tabindex="-1" role="dialog"
                                              aria-labelledby="exampleModalLongTitle" aria-hidden="true">
