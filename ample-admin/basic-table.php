@@ -12,6 +12,7 @@
         content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
     <title>Ample Admin Lite Template by WrapPixel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
@@ -280,6 +281,7 @@
                                         <td>
                                             <a role="button" class="btn btn-outline-danger" href="hapus_user.php?id=<?php echo $d['id_user']; ?>"
                                                onclick="return hapusUser(event, <?php echo $d['id_user']; ?>)">HAPUS</a>
+                                            <a role="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#edit_button_<?php echo $d['id_user']; ?>">EDIT</a>
                                             <script>
                                                 function hapusUser(event, userId) {
                                                     event.preventDefault(); // Mencegah tindakan default dari tautan
@@ -318,24 +320,47 @@
                                             }
                                             ?>
                                         </td>
-                                        <td>
-                                        <td>
-                                            <a role="button" class="btn btn-outline-success edit-button">Edit</a>
-                                            <div class="edit-popup">
-                                                <h3>Edit Form</h3>
-                                                <form action="" class="edit-form">
-                                                    <input type="text" name="nama" placeholder="Masukkan Nama Baru" class="box">
-                                                    <input type="email" name="email" placeholder="Masukkan Email Baru" class="box">
-                                                    <input type="text" name="telp" placeholder="Masukkan Nomor Baru" class="box">
-                                                    <textarea name="text" placeholder="Masukkan Pesan Baru" class="box"></textarea>
-                                                    <button type="submit" class="btn btn-success">Simpan</button>
-                                                    <a href="#" class="btn btn-danger cancel-button">Batalkan</a>
-                                                </form>
-                                            </div>
-                                        </td>
-                                        </td>
-                                    </tr>
+                                        <div class="modal fade" id="edit_button_<?php echo $d['id_user']; ?>" tabindex="-1" role="dialog"
+                                             aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Merubah User</h5>
+                                                    </div>
+                                                    <!-----Popup Edit---->
+                                                    <div class="modal-body">
+                                                        <form action="edit_user.php" method="post">
+                                                            <input type="hidden" name="id_user" id="id_user" value="<?php echo $d['id_user']; ?>">
 
+                                                            <div class="form-group">
+                                                                <label for="nama"> Nama User</label>
+                                                                <input type="text" class="form-control" name="nama" id="nama" value="<?php echo $d['nama']; ?>">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="email"> Email</label>
+                                                                <input type="text" class="form-control" name="email" id="email" value="<?php echo $d['email']; ?>">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="telp"> No. Telepon</label>
+                                                                <input type="text" class="form-control" name="telp" id="telp" value="<?php echo $d['telp']; ?>">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="pesan"> Pesan</label>
+                                                                <input type="text" class="form-control" name="pesan" id="pesan" value="<?php echo $d['pesan']; ?>">
+                                                            </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Tutup</button>
+                                                        <form class="form" method="post" action="edit_user.php">
+                                                            <button type="submit" class="btn btn-outline-success">Simpan Perubahan</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <?php } ?>
                                     </tbody>

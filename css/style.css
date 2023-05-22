@@ -117,7 +117,7 @@ section {
 }
 
 .header .navbar a {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--black);
     text-transform: capitalize;
     margin: 0 1rem;
