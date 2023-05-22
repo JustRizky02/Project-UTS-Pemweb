@@ -55,7 +55,7 @@
       <label for="remember-me">remember me</label>
       <a href="#">forgot password?</a>
     </div>
-    <a href="ample-admin\dashboard.html" class="btn">Login Now</a>
+    <a href="ample-admin\dashboard.php" class="btn">Login Now</a>
     <p>don't have an account <a href="#">create one!</a></p>
   </form>
 

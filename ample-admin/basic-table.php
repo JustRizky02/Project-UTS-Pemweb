@@ -269,12 +269,12 @@
                                             <?php echo $d['pesan']; ?>
                                         </td>
                                         <td>
-                                            <a role="button" class="btn btn-outline-success"
-                                               href="edit_user.php?id=<?php echo $d['id_user']; ?>">Edit</a>
-                                        </td>
-                                        <td>
                                             <a role="button" class="btn btn-outline-danger"
                                                href="hapus_user.php?id=<?php echo $d['id_user']; ?>">HAPUS</a>
+                                        </td>
+                                        <td>
+                                            <a role="button" class="btn btn-outline-success"
+                                               href="edit_user.php?id=<?php echo $d['id_user']; ?>">Edit</a>
                                         </td>
                                     </tr>
                                     <?php } ?>
