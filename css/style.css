@@ -505,7 +505,7 @@ section {
 
 .about .box-container .box h3 {
     font-size: 4rem;
-    color: var(--black);
+    color: var(--yellow);
     text-transform: capitalize;
 }
 

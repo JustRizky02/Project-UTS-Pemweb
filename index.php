@@ -47,16 +47,17 @@
   </form>
 
   <form action="" class="login-form">
-    <h3>login form</h3>
-    <input type="email" placeholder="enter your email" class="box">
-    <input type="password" placeholder="enter your password" class="box">
+    <h3>Login Form</h3>
+    <input type="email" placeholder="Masukan Email" class="box">
+    <input type="password" placeholder="Masukan Password" class="box">
     <div class="flex">
       <input type="checkbox" name="" id="remember-me">
-      <label for="remember-me">remember me</label>
-      <a href="#">forgot password?</a>
+      <label for="remember-me">Remember me</label>
+      <a href="#">Lupa password?</a>
     </div>
-    <a href="ample-admin\dashboard.php" class="btn">Login Now</a>
-    <p>don't have an account <a href="#">create one!</a></p>
+    <a href="#" class="btn">Login Pengguna</a>
+      <a href="ample-admin\dashboard.php" class="btn">Login Admin</a>
+    <p>Tidak punya akun? <a href="#">buat sekarang!</a></p>
   </form>
 
 </header>
@@ -523,7 +524,7 @@
   <h1 class="heading"> Konsultasi Project </h1>
 
   <div class="row">
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56400419603!2d107.5607554697324!3d-6.903442379407542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1684673008025!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"></iframe>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.875152029932!2d107.60453301073659!3d-6.905529667553195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e647aeb77f91%3A0x58d7ebe1240aa6bc!2sJl.%20Wastukencana%20Gg.%20Nangkasuni%20No.1%2C%20Tamansari%2C%20Kec.%20Bandung%20Wetan%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040116!5e0!3m2!1sen!2sid!4v1684781134540!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <form class="form" method="post" action="inputuser.php">
       <h3>Hubungi Kami</h3>
       <input type="text" placeholder="Nama" class="box" name="nama" required>
@@ -555,7 +556,7 @@
         </div>
         <div class="content">
           <h3>Ide Desain Pagar untuk Rumah Minimalismu</h3>
-          <p>Bagian dari rumah yang pertama kali akan dilihat oleh banyak orang ada pada bagian luar rumah yaitu pagar. Selain berfungsi sebagai keamanan untuk rumah dan jadi pembatas area rumah, pagar juga bisa menjadi dekorasi eksterior yang mempercantik tampilan rumahmu. Terdapat banyak pilihan jenis dan model pagar yang bisa kalian terapkan. Pastikan kalian memilih jenis dan model pagar yang sesuai dengan konsep yang senada dengan rumahmu.</p>
+          <p>Bagian dari rumah yang pertama kali akan dilihat oleh banyak orang ada pada bagian luar rumah yaitu pagar. Selain berfungsi sebagai keamanan untuk rumah dan jadi pembatas area rumah, pagar juga bisa menjadi dekorasi eksterior yang mempercantik tampilan rumahmu. Terdapat banyak pilihan jenis dan model pagar yang bisa kalian terapkan.</p>
           <a href="https://www.instagram.com/p/CpZxYKUL8fq/?utm_source=ig_web_copy_link&igshid=MmJiY2I4NDBkZg==" class="btn">Baca Selengkapnya</a>
         </div>
       </div>
@@ -624,22 +625,7 @@
 
 <!-- blogs section ends -->
 
-<!-- client logo section starts -->
 
-<section class="logo-container">
-  <div class="swiper logo-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide slide"><img src="images/client-logo-1.png" alt=""></div>
-      <div class="swiper-slide slide"><img src="images/client-logo-2.png" alt=""></div>
-      <div class="swiper-slide slide"><img src="images/client-logo-3.png" alt=""></div>
-      <div class="swiper-slide slide"><img src="images/client-logo-4.png" alt=""></div>
-      <div class="swiper-slide slide"><img src="images/client-logo-5.png" alt=""></div>
-      <div class="swiper-slide slide"><img src="images/client-logo-6.png" alt=""></div>
-    </div>
-  </div>
-</section>
-
-<!-- client logo section ends -->
 
 <!-- footer section starts  -->
 
