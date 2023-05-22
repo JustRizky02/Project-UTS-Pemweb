@@ -232,59 +232,55 @@
                             <div class="table-responsive">
                                 <table class="table text-nowrap">
                                     <thead>
-                                        <tr>
-                                            <th class="border-top-0">#</th>
-                                            <th class="border-top-0">Nama</th>
-                                            <th class="border-top-0">Email</th>
-                                            <th class="border-top-0">No.Telp</th>
-                                            <th class="border-top-0">Pesan</th>
-                                        </tr>
+                                    <tr>
+                                        <th class="border-top-0">No</th>
+                                        <th class="border-top-0">ID</th>
+                                        <th class="border-top-0">Nama</th>
+                                        <th class="border-top-0">Email</th>
+                                        <th class="border-top-0">No.Telp</th>
+                                        <th class="border-top-0">Pesan</th>
+                                        <th class="border-top-0">Aksi</th>
+                                    </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Deshmukh</td>
-                                            <td>Prohaska</td>
-                                            <td>@Genelia</td>
-                                            <td>admin</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Deshmukh</td>
-                                            <td>Gaylord</td>
-                                            <td>@Ritesh</td>
-                                            <td>member</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Sanghani</td>
-                                            <td>Gusikowski</td>
-                                            <td>@Govinda</td>
-                                            <td>developer</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Roshan</td>
-                                            <td>Rogahn</td>
-                                            <td>@Hritik</td>
-                                            <td>supporter</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Joshi</td>
-                                            <td>Hickle</td>
-                                            <td>@Maruti</td>
-                                            <td>member</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Nigam</td>
-                                            <td>Eichmann</td>
-                                            <td>@Sonu</td>
-                                            <td>supporter</td>
-                                        </tr>
+                                    <?php
+                                    include 'koneksi.php';
+                                    $no = 1;
+                                    $data = mysqli_query($koneksi, "SELECT * FROM user");
+                                    while ($d = mysqli_fetch_array($data)) {
+                                    ?>
+                                    <tr>
+                                        <td>
+                                            <?php echo $no++; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $d['id_user']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $d['nama']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $d['email']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $d['telp']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $d['pesan']; ?>
+                                        </td>
+                                        <td>
+                                            <a role="button" class="btn btn-outline-success"
+                                               href="edit_user.php?id=<?php echo $d['id_user']; ?>">Edit</a>
+                                        </td>
+                                        <td>
+                                            <a role="button" class="btn btn-outline-danger"
+                                               href="hapus_user.php?id=<?php echo $d['id_user']; ?>">HAPUS</a>
+                                        </td>
+                                    </tr>
+                                    <?php } ?>
                                     </tbody>
                                 </table>
+
                             </div>
                         </div>
                     </div>
