@@ -184,7 +184,7 @@
             <div class="page-breadcrumb bg-white">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Basic Table</h4>
+                        <h4 class="page-title">Tabel Pengguna</h4>
                     </div>
 <!--                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">-->
 <!--                        <div class="d-md-flex">-->
@@ -214,44 +214,9 @@
                         <div class="white-box">
                             <h3 class="box-title">Data Pengguna</h3>
                             <div class="tambah">
-                                <a role="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#tambah_button<?php echo $d['id_user']; ?>">Tambah Data</a>
+                                <a role="button" class="btn btn-outline-primary" href="tambahuser.php">Tambah Data</a>
                             </div>
 
-                            <div class="modal fade" id="tambah_button<?php echo $d['id_user']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Tambah User</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form action="inputuser_dashboard.php" method="post">
-                                                <input type="hidden" name="id_user" value="<?php echo $d['id_user']; ?>">
-                                                <div class="form-group">
-                                                    <label for="nama">Nama User</label>
-                                                    <input type="text" class="form-control" name="nama" id="nama" value="<?php echo $d['nama']; ?>">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="email">Email</label>
-                                                    <input type="text" class="form-control" name="email" id="email" value="<?php echo $d['email']; ?>">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="telp">No. Telepon</label>
-                                                    <input type="text" class="form-control" name="telp" id="telp" value="<?php echo $d['telp']; ?>">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="pesan">Pesan</label>
-                                                    <input type="text" class="form-control" name="pesan" id="pesan" value="<?php echo $d['pesan']; ?>">
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Tutup</button>
-                                                    <button type="submit" class="btn btn-outline-success">Simpan Perubahan</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="table-responsive">
                                 <table class="table text-nowrap">
