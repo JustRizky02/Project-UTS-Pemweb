@@ -153,7 +153,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="basic-table.php"
                                 aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
-                                <span class="hide-menu">Basic Table</span>
+                                <span class="hide-menu">Tabel Pengguna</span>
                             </a>
                         </li>
 
