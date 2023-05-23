@@ -153,7 +153,7 @@
                         <a class="sidebar-link waves-effect waves-dark sidebar-link" href="basic-table.php"
                            aria-expanded="false">
                             <i class="fa fa-table" aria-hidden="true"></i>
-                            <span class="hide-menu">Basic Table</span>
+                            <span class="hide-menu">Tabel Pengguna</span>
                         </a>
                     </li>
 
@@ -167,15 +167,107 @@
                 </ul>
 
             </nav>
+            <!-- End Sidebar navigation -->
         </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="page-breadcrumb bg-white">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Tambah Pengguna</h4>
+                </div>
+                <!--                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">-->
+                <!--                        <div class="d-md-flex">-->
+                <!--                            <ol class="breadcrumb ms-auto">-->
+                <!--                                <li><a href="#" class="fw-normal">Dashboard</a></li>-->
+                <!--                            </ol>-->
+                <!--                            <a href="https://www.wrappixel.com/templates/ampleadmin/" target="_blank"-->
+                <!--                                class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Upgrade-->
+                <!--                                to Pro</a>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
         <div class="container-fluid">
             <!-- ============================================================== -->
             <!-- Start Page Content -->
             <!-- ============================================================== -->
+            <div class="container">
+                <div class="row my-2">
 
+                    <hr>
+                </div>
+                <div class="row my-2">
+                    <div class="col-md">
+                        <form method="post" action="inputuser_dashboard.php">
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" class="form-control w-50" id="nama" placeholder="Masukkan Nama User" name="nama" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-control form-control-md w-50" id="email" placeholder="Masukkan Email User" name="email" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telp" class="form-label">No. Telepon</label>
+                                <input type="number" class="form-control w-50" id="telp" placeholder="Masukkan Nomor Telepon" name="telp" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesan" class="form-label">Pesan</label>
+                                <input type="text" class="form-control w-50" id="pesan" placeholder="Masukkan Pesan" name="pesan" autocomplete="off">
+                            </div>
+                            <hr>
+                            <a href="basic-table.php" class="btn btn-secondary">Kembali</a>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End PAge Content -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Right sidebar -->
+            <!-- ============================================================== -->
+            <!-- .right-sidebar -->
+            <!-- ============================================================== -->
+            <!-- End Right sidebar -->
+            <!-- ============================================================== -->
+        </div>
         <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
+        <!-- End Container fluid  -->
         <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <!--            <footer class="footer text-center"> 2021 © Ample Admin brought to you by <a-->
+        <!--                    href="https://www.wrappixel.com/">wrappixel.com</a>-->
+        <!--            </footer>-->
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page wrapper  -->
+    <!-- ============================================================== -->
+</div>
 <!-- ============================================================== -->
 <!-- End Wrapper -->
 <!-- ============================================================== -->

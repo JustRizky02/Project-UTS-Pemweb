@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result) {
         // Redirect ke halaman index.php jika berhasil memasukkan data
-        header("location: index.php?status=success");
+        header("location: basic-table.php?status=success");
         exit;
     } else {
         // Tampilkan pesan error jika terjadi kesalahan
@@ -27,4 +27,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_close($koneksi);
 }
 ?>
-<?php
+
+

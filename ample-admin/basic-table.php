@@ -224,16 +224,33 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="exampleModalLongTitle">Masukkan Data Pengguna</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            ...
+                                            <form class="form" action="inputuser_dashboard.php" method="post">
+                                                <div class="form-group">
+                                                    <label for="nama"> Nama User</label>
+                                                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukan Nama User" autocomplete="off" required>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="email"> Email</label>
+                                                    <input type="text" class="form-control" name="email" id="email" placeholder="Masukan Email" autocomplete="off" required>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="telp"> No. Telepon</label>
+                                                    <input type="text" class="form-control" name="telp" id="telp" placeholder="Masukan Nomor" autocomplete="off" required>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="pesan"> Pesan</label>
+                                                    <input type="text" class="form-control" name="pesan" id="pesan" placeholder="Masukan Pesan" autocomplete="off">
+                                                </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Tutup</button>
-                                            <button type="button" class="btn btn-outline-success">Simpan</button>
+                                            <button type="submit" class="btn btn-outline-success">Simpan</button>
                                         </div>
                                     </div>
                                 </div>
