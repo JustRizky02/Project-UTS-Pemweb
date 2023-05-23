@@ -534,7 +534,7 @@
       <input type="email" placeholder="Email" class="box" name="email" required>
       <input type="tel" placeholder="No.Telp" class="box" name="telp" required>
       <textarea name="pesan" placeholder="Pesan" class="box" cols="30" rows="10" required></textarea>
-      <input type="submit" value="send message" class="btn">
+      <input type="submit" value="Kirim Pesan" class="btn">
     </form>
 
   </div>
