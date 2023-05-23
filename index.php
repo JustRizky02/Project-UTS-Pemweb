@@ -157,7 +157,7 @@
       <h3>Kami akan memberikan Anda karya terbaik yang Anda impikan!</h3>
       <p>Kami adalah penyedia jasa pelaksanaan pembangunan yang berdedikasi untuk membantu Anda mewujudkan proyek pembangunan impian Anda. Dengan pengalaman dan keahlian kami yang luas, kami siap mengelola setiap tahap konstruksi proyek Anda dengan profesionalisme dan keunggulan.<p>
 
-      <a href="tentang.html" class="btn">Baca selengkapnya</a>
+      <a href="tentangbaru.php" class="btn">Baca selengkapnya</a>
     </div>
 
   </div>
