@@ -230,28 +230,30 @@
                                             <form class="form" action="inputuser_dashboard.php" method="post">
                                                 <div class="form-group">
                                                     <label for="nama"> Nama User</label>
-                                                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukan Nama User" autocomplete="off" required>
+                                                    <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukan Nama User" required>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label for="email"> Email</label>
-                                                    <input type="text" class="form-control" name="email" id="email" placeholder="Masukan Email" autocomplete="off" required>
+                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Masukan Email" required>
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label for="telp"> No. Telepon</label>
-                                                    <input type="text" class="form-control" name="telp" id="telp" placeholder="Masukan Nomor" autocomplete="off" required>
+                                                    <label for="tel"> No. Telepon</label>
+                                                    <input type="text" class="form-control" name="telp" id="telp" placeholder="Masukan Nomor" required>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label for="pesan"> Pesan</label>
-                                                    <input type="text" class="form-control" name="pesan" id="pesan" placeholder="Masukan Pesan" autocomplete="off">
+                                                    <input type="text" class="form-control" name="pesan" id="pesan" placeholder="Masukan Pesan">
                                                 </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Tutup</button>
+                                                    <input type="submit" value="Simpan" class="btn btn-outline-success">
+                                                </div>
+                                            </form>
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Tutup</button>
-                                            <button type="submit" class="btn btn-outline-success">Simpan</button>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
