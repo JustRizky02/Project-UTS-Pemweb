@@ -12,7 +12,7 @@ $cek = mysqli_num_rows($data);
 if($cek > 0){
     $_SESSION['email'] =$email;
     $_SESSION['status'] ="login";
-    header("location:ample-admin/dashboard.php");
+    header("location:dashboard.php");
 }
 else{
     echo "<script> alert ('login gagal ! username dan password tidak benar');</script>";
