@@ -50,15 +50,14 @@
 
   <form method="post" action="login.php" class="login-form">
     <h3>Login Form</h3>
-    <input type="email" placeholder="Masukan Email" class="box">
-    <input type="password" placeholder="Masukan Password" class="box">
+    <input type="email" placeholder="Masukan Email" class="box"required>
+    <input type="password" placeholder="Masukan Password" class="box"required>
     <div class="flex">
       <input type="checkbox" name="" id="remember-me">
       <label for="remember-me">Remember me</label>
       <a href="#">Lupa password?</a>
     </div>
-
-      <a type="submit" class="btn">Login Admin</a>
+      <button type="submit" class="btn">Login Admin</button>
   </form>
 
 </header>
