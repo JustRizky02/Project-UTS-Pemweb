@@ -57,7 +57,7 @@
       <label for="remember-me">Remember me</label>
       <a href="#">Lupa password?</a>
     </div>
-    <a href="#" class="btn">Login Pengguna</a>
+
       <a href="ample-admin\dashboard.php" class="btn">Login Admin</a>
     <p>Tidak punya akun? <a href="#">buat sekarang!</a></p>
   </form>
