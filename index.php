@@ -48,17 +48,18 @@
     <label for="search-box" class="fas fa-search"></label>
   </form>
 
-  <form method="post" action="login.php" class="login-form">
-    <h3>Login Form</h3>
-    <input type="email" placeholder="Masukan Email" class="box"required>
-    <input type="password" placeholder="Masukan Password" class="box"required>
-    <div class="flex">
-      <input type="checkbox" name="" id="remember-me">
-      <label for="remember-me">Remember me</label>
-      <a href="#">Lupa password?</a>
-    </div>
-      <button type="submit" class="btn">Login Admin</button>
-  </form>
+    <form method="POST" action="ample-admin/login.php" class="login-form">
+        <h3>Login Form</h3>
+        <input type="email" name="email" placeholder="Masukan Email" class="box">
+        <input type="password" name="password" placeholder="Masukan Password" class="box">
+        <div class="flex">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">Remember me</label>
+            <a href="#">Lupa password?</a>
+        </div>
+        <button type="submit" name="login" class="btn">Login Admin</button>
+    </form>
+
 
 </header>
 
