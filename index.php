@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Complete Responsive Construction Website Design Tutorial</title>
+  <title>Perisai General Contractor</title>
 
   <!-- font awesome cdn link  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -48,7 +48,7 @@
     <label for="search-box" class="fas fa-search"></label>
   </form>
 
-  <form action="" class="login-form">
+  <form method="post" action="login.php" class="login-form">
     <h3>Login Form</h3>
     <input type="email" placeholder="Masukan Email" class="box">
     <input type="password" placeholder="Masukan Password" class="box">
@@ -58,8 +58,7 @@
       <a href="#">Lupa password?</a>
     </div>
 
-      <a href="ample-admin\dashboard.php" class="btn">Login Admin</a>
-    <p>Tidak punya akun? <a href="#">buat sekarang!</a></p>
+      <a type="submit" class="btn">Login Admin</a>
   </form>
 
 </header>
@@ -268,7 +267,7 @@
           <h3>Rumah Idaman</h3>
           <p>construction, design</p>
         </div>
-        <i class="fas fa-plus"></i>
+          <i class="fas"></i>
       </div>
     </a>
 
@@ -281,7 +280,7 @@
           <h3>Ruangan Idaman</h3>
           <p>construction, design</p>
         </div>
-        <i class="fas fa-plus"></i>
+          <i class="fas"></i>
       </div>
     </a>
 
@@ -294,7 +293,7 @@
           <h3>Taman Idaman</h3>
           <p>construction, design</p>
         </div>
-        <i class="fas fa-plus"></i>
+          <i class="fas"></i>
       </div>
     </a>
 
@@ -307,7 +306,7 @@
           <h3>Kantor Idaman</h3>
           <p>construction, design</p>
         </div>
-        <i class="fas fa-plus"></i>
+          <i class="fas"></i>
       </div>
     </a>
 
@@ -320,7 +319,7 @@
           <h3>Dapur Idaman</h3>
           <p>construction, design</p>
         </div>
-        <i class="fas fa-plus"></i>
+          <i class="fas"></i>
       </div>
     </a>
 
@@ -333,7 +332,7 @@
           <h3>Toilet Idaman</h3>
           <p>construction, design</p>
         </div>
-        <i class="fas fa-plus"></i>
+        <i class="fas"></i>
       </div>
     </a>
 
