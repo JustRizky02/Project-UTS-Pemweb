@@ -191,26 +191,22 @@
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form class="form" action="inputuser_dashboard.php" method="post">
+                                        <form class="form" action="inputadmin.php" method="post">
                                             <div class="form-group">
-                                                <label for="nama"> Nama User</label>
-                                                <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukan Nama User" required>
+                                                <label for="nama"> Nama Admin</label>
+                                                <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukan Nama Admin" required>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="email"> Email</label>
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="Masukan Email" required>
+                                                <label for="email"> Email Admin</label>
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Masukan Email Admin" required>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="tel"> No. Telepon</label>
-                                                <input type="text" class="form-control" name="telp" id="telp" placeholder="Masukan Nomor" required>
+                                                <label for="tel"> Password</label>
+                                                <input type="text" class="form-control" name="telp" id="telp" placeholder="Masukan Password" required>
                                             </div>
 
-                                            <div class="form-group">
-                                                <label for="pesan"> Pesan</label>
-                                                <input type="text" class="form-control" name="pesan" id="pesan" placeholder="Masukan Pesan">
-                                            </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Tutup</button>
                                                 <input type="submit" value="Simpan" class="btn btn-outline-success">
@@ -264,9 +260,8 @@
                                         <script>
                                             <a role="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#edit_button_<?php echo $d['id_admin']; ?>">EDIT</a>
 
-                                            function hapusUser(event, userId) {
+                                            function hapusUser(event, AdminId) {
                                                 event.preventDefault(); // Mencegah tindakan default dari tautan
-
                                                 Swal.fire({
                                                     title: 'Konfirmasi Hapus',
                                                     text: 'Apakah Anda yakin ingin menghapus admin ini?',
@@ -278,7 +273,7 @@
                                                 }).then((result) => {
                                                     if (result.isConfirmed) {
                                                         // Tindakan hapus jika tombol "Hapus" diklik
-                                                        window.location.href = 'hapus_admin.php?id=' + AdminId;
+                                                        window.location.href = 'hapus.admin.php?id=' + AdminId;
                                                     }
                                                 });
 
@@ -312,7 +307,7 @@
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle">Merubah User</h5>
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Merubah Admin</h5>
                                                 </div>
                                                 <!-----Popup Edit---->
                                                 <div class="modal-body">
