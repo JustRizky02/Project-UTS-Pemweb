@@ -117,7 +117,7 @@
 
                         <li class="text-center p-20 upgrade-btn">
                             <a href="../index.php"
-                                class="btn d-grid btn-danger text-white" target="_blank">Logout</a>
+                                class="btn d-grid btn-danger text-white">Logout</a>
                         </li>
                     </ul>
 
