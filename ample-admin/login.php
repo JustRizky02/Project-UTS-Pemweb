@@ -16,6 +16,6 @@ if($cek > 0){
 }
 else{
     echo "<script> alert ('login gagal ! username dan password tidak benar');</script>";
-    echo "<script> window.location='index.php';</script>";
+    echo "<script> window.location='../index.php';</script>";
 }
 ?>

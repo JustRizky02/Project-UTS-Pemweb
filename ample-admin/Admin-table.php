@@ -256,15 +256,14 @@
                                     </td>
                                     <td>
                                         <a role="button" class="btn btn-outline-danger" href="hapus_admin.php?id=<?php echo $d['id_admin']; ?>"
-                                           onclick="return hapusUser(event, <?php echo $d['id_admin']; ?>)">HAPUS</a>
+                                           onclick="return hapusAdmin(event, <?php echo $d['id_admin']; ?>)">HAPUS</a>
                                         <script>
-                                            <a role="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#edit_button_<?php echo $d['id_admin']; ?>">EDIT</a>
-
-                                            function hapusUser(event, AdminId) {
+                                            function hapusAdmin(event, adminId) {
                                                 event.preventDefault(); // Mencegah tindakan default dari tautan
+
                                                 Swal.fire({
                                                     title: 'Konfirmasi Hapus',
-                                                    text: 'Apakah Anda yakin ingin menghapus admin ini?',
+                                                    text: 'Apakah Anda yakin ingin menghapus user ini?',
                                                     icon: 'warning',
                                                     showCancelButton: true,
                                                     confirmButtonText: 'Hapus',
@@ -273,7 +272,7 @@
                                                 }).then((result) => {
                                                     if (result.isConfirmed) {
                                                         // Tindakan hapus jika tombol "Hapus" diklik
-                                                        window.location.href = 'hapus.admin.php?id=' + AdminId;
+                                                        window.location.href = 'hapus_admin.php?id=' + adminId;
                                                     }
                                                 });
 
