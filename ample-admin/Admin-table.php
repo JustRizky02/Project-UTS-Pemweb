@@ -257,6 +257,7 @@
                                     <td>
                                         <a role="button" class="btn btn-outline-danger" href="hapus_admin.php?id=<?php echo $d['id_admin']; ?>"
                                            onclick="return hapusAdmin(event, <?php echo $d['id_admin']; ?>)">HAPUS</a>
+                                        <a role="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#edit_button_<?php echo $d['id_admin']; ?>">EDIT</a>
                                         <script>
                                             function hapusAdmin(event, adminId) {
                                                 event.preventDefault(); // Mencegah tindakan default dari tautan
@@ -330,7 +331,7 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Tutup</button>
-                                                    <form class="form" method="post" action="edit_user.php">
+                                                    <form class="form" method="post" action="edit_admin.php">
                                                         <button type="submit" class="btn btn-outline-success">Simpan Perubahan</button>
                                                     </form>
                                                 </div>

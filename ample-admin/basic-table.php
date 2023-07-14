@@ -348,7 +348,7 @@
 
                                         </td>
                                         <div class="modal fade" id="edit_button_<?php echo $d['id_user']; ?>" tabindex="-1" role="dialog"
-                                             aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                             ari a-labelledby="exampleModalLongTitle" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
