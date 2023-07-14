@@ -311,8 +311,8 @@
                                                 </div>
                                                 <!-----Popup Edit---->
                                                 <div class="modal-body">
-                                                    <form action="edit_user.php" method="post">
-                                                        <input type="hidden" name="id_user" id="id_admin" value="<?php echo $d['id_admin']; ?>">
+                                                    <form action="edit_admin.php" method="post">
+                                                        <input type="hidden" name="id_admin" id="id_admin" value="<?php echo $d['id_admin']; ?>">
 
                                                         <div class="form-group">
                                                             <label for="nama"> Nama User</label>
