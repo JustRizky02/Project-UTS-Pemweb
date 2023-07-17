@@ -275,7 +275,7 @@
 
                                                 Swal.fire({
                                                     title: 'Konfirmasi Hapus',
-                                                    text: 'Apakah Anda yakin ingin menghapus user ini?',
+                                                    text: 'Apakah Anda yakin ingin menghapus admin ini?',
                                                     icon: 'warning',
                                                     showCancelButton: true,
                                                     confirmButtonText: 'Hapus',
@@ -300,7 +300,7 @@
                                                             Swal.fire({
                                                                 title: "Berhasil dihapus",
                                                                 icon: "success",
-                                                                timer: 120,
+                                                                timer: 10000,
                                                                 showConfirmButton: false
                                                             });
                                                         </script>

@@ -92,29 +92,6 @@
                     <!-- Right side toggle and nav items -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav ms-auto d-flex align-items-center">
-
-                        <!-- ============================================================== -->
-                        <!-- Search -->
-                        <!-- ============================================================== -->
-<!--                        <li class=" in">-->
-<!--                            <form role="search" class="app-search d-none d-md-block me-3">-->
-<!--                                <input type="text" placeholder="Search..." class="form-control mt-0">-->
-<!--                                <a href="" class="active">-->
-<!--                                    <i class="fa fa-search"></i>-->
-<!--                                </a>-->
-<!--                            </form>-->
-<!--                        </li>-->
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-<!--                        <li>-->
-<!--                            <a class="profile-pic" href="#">-->
-<!--                                <img src="plugins/images/users/varun.jpg" alt="user-img" width="36"-->
-<!--                                    class="img-circle"><span class="text-white font-medium">Steave</span></a>-->
-<!--                        </li>-->
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
                     </ul>
                 </div>
             </nav>
@@ -258,11 +235,15 @@
                                 </div>
                             </div>
 
-
-                            <form method="get" action="basic-table.php" style="text-align: right">
-                                <input type="text" name="cari" placeholder="Pencarian.." autocomplete="off" value="<?php if(isset($_GET['cari'])){echo $_GET['cari'];} ?>">
-                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            <form method="get" action="basic-table.php" class="text-right">
+                                <div class="input-group rounded">
+                                    <input type="text" name="cari" class="form-control rounded" placeholder="Pencarian.." aria-label="Pencarian" autocomplete="off" value="<?php if(isset($_GET['cari'])){echo $_GET['cari'];} ?>">
+                                    <div class="input-group-prepend">
+                                        <button type="submit" class="btn btn-outline-primary rounded"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
                             </form>
+
 
 
                             <div class="table-responsive">
@@ -345,17 +326,15 @@
                                                         <script>
                                                             Swal.fire({
                                                                 title: "Berhasil dihapus",
+                                                                text: "",
                                                                 icon: "success",
-                                                                timer: 120,
+                                                                timer: 3000, // Durasi notifikasi ditampilkan dalam milidetik (3 detik dalam contoh ini)
                                                                 showConfirmButton: false
                                                             });
                                                         </script>
-                                                    ';
+                                                ';
                                                 }
                                             }
-//                                            header('Location: basic-table.php?hapus=berhasil');
-//                                            exit;
-
                                             ?>
 
                                         </td>
@@ -388,7 +367,7 @@
 
                                                             <div class="form-group">
                                                                 <label for="pesan"> Pesan</label>
-                                                                <input type="text" class="form-control" name="pesan" id="pesan" value="<?php echo $d['pesan']; ?>">
+                                                                <input type="text"  class="form-control" name="pesan" id="pesan" value="<?php echo $d['pesan']; ?>">
                                                             </div>
                                                     </div>
                                                     <div class="modal-footer">
