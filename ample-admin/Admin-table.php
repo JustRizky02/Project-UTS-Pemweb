@@ -218,6 +218,10 @@
                             </div>
                         </div>
 
+                        <form method="get" action="Admin-table.php" style="text-align: right">
+                            <input type="text" name="cari" placeholder="Pencarian.." autocomplete="off" value="<?php if(isset($_GET['cari'])){echo $_GET['cari'];} ?>">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
 
                         <div class="table-responsive">
                             <table class="table text-nowrap">
@@ -234,8 +238,15 @@
                                 <tbody>
                                 <?php
                                 include 'koneksi.php';
+                                if(isset($_GET['cari'])){
+                                    $pencarian=$_GET['cari'];
+                                    $query="select * from admin where id_admin like '%".$pencarian."%' or nama like '%".$pencarian."%'or email like '%".$pencarian."%'";
+                                } else {
+                                    $query="select * from admin";
+                                }
+
                                 $no = 1;
-                                $data = mysqli_query($koneksi, "SELECT * FROM admin");
+                                $data = mysqli_query($koneksi, $query);
                                 while ($d = mysqli_fetch_array($data)) {
                                 ?>
                                 <tr>

@@ -218,8 +218,7 @@
                         <div class="white-box">
                             <h3 class="box-title">Data Pengguna</h3>
                             <!-- Modal -->
-                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalLong">Tambah Pengguna
-                            </button>
+                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalLong">Tambah Pengguna</button>
                             <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
@@ -260,6 +259,12 @@
                             </div>
 
 
+                            <form method="get" action="basic-table.php" style="text-align: right">
+                                <input type="text" name="cari" placeholder="Pencarian.." autocomplete="off" value="<?php if(isset($_GET['cari'])){echo $_GET['cari'];} ?>">
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+
+
                             <div class="table-responsive">
                                 <table class="table text-nowrap">
                                     <thead>
@@ -276,8 +281,15 @@
                                     <tbody>
                                     <?php
                                     include 'koneksi.php';
+                                    if(isset($_GET['cari'])){
+                                        $pencarian=$_GET['cari'];
+                                        $query="select * from user where id_user like '%".$pencarian."%' or nama like '%".$pencarian."%'or email like '%".$pencarian."%'or telp like '%".$pencarian."%'";
+                                        } else {
+                                        $query="select * from user";
+                                    }
+
                                     $no = 1;
-                                    $data = mysqli_query($koneksi, "SELECT * FROM user");
+                                    $data = mysqli_query($koneksi, $query);
                                     while ($d = mysqli_fetch_array($data)) {
                                     ?>
                                     <tr>
