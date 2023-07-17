@@ -309,7 +309,7 @@
                                             <?php echo $d['telp']; ?>
                                         </td>
                                         <td>
-                                            <?php echo $d['pesan']; ?>
+                                            <?php echo wordwrap($d['pesan'], 40, "<br>", true); ?>
                                         </td>
                                         <td>
                                             <a role="button" class="btn btn-outline-danger" href="hapus_user.php?id=<?php echo $d['id_user']; ?>"
