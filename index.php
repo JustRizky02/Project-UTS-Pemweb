@@ -51,11 +51,12 @@
     <form method="POST" action="ample-admin/login.php" class="login-form">
         <h3>Login Form</h3>
         <input type="email" name="email" placeholder="Masukan Email" class="box">
-        <input type="password" name="password" placeholder="Masukan Password" class="box">
+        <div class="form-password">
+          <input type="password" name="password" id="passwordInput" placeholder="Masukan Password" class="box">
+        </div>
         <div class="flex">
-            <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">Remember me</label>
-            <a href="#">Lupa password?</a>
+          <input type="checkbox" id="showPassword" class="form-checkbox">
+          <label for="showPassword">Tampilkan Password</label>
         </div>
         <button type="submit" name="login" class="btn">Login Admin</button>
     </form>
@@ -684,9 +685,19 @@
 <script src="js/script.js"></script>
 
 <script>
-
   lightGallery(document.querySelector('.projects .box-container'));
+</script>
+<script>
+  const showPasswordCheckbox = document.getElementById("showPassword");
+  const passwordInput = document.getElementById("passwordInput");
 
+  showPasswordCheckbox.addEventListener("change", function() {
+    if (this.checked) {
+      passwordInput.type = "text";
+    } else {
+      passwordInput.type = "password";
+    }
+  });
 </script>
 
 </body>
